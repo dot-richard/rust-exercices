@@ -4,26 +4,40 @@ struct Rectangle {
     height: u32,
 }
 
+impl Rectangle {
+    fn aire(&self) -> u32 {
+        self.width * self.height
+    }
+}
+
 fn create_rectangle(width: u32, height: u32) -> Rectangle {
     Rectangle { width, height }
 }
 
-fn aire_rectangle(rectangle: &Rectangle) -> u32 {
-    rectangle.width * rectangle.height
-}
+// implementation de l'aire
+//fn aire_rectangle(rectangle: &Rectangle) -> u32 {
+//    rectangle.width * rectangle.height
+//}
 
 fn display_rectangle(rectangle: &Rectangle) {
     println!();
+
     // le formatage diffère selon le caractère
+
     // ici
     //  struct { attr }
     //println!("{:?}", rectangle);
+
     // ici
     //  struct {
     //      attr
     //  }
     println!("{:#?}", rectangle);
-    println!("aire:\n{}", aire_rectangle(rectangle));
+
+    // implementation de l'aire
+    //println!("aire: {}", aire_rectangle(rectangle));
+    println!("rectangle.aire: {}", rectangle.aire());
+
     println!();
 }
 
