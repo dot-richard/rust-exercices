@@ -1,4 +1,3 @@
 [workspace]
-
-members = ["jeu_du_plus_ou_du_moins", "the_twelve_days_of_christmas", "fib", "celsius_and_fahrenheit", "slice", "struct_user", "rectangle", "restaurant"]
-
+members = ["jeu_du_plus_ou_du_moins", "the_twelve_days_of_christmas", "fib", "celsius_and_fahrenheit", "slice", "struct_user", "rectangle", "restaurant", "loucherbem"]
+resolver = "2"
